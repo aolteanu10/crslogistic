@@ -298,16 +298,17 @@ footer {
         width: 100%;
     }
     
-    .navbar-links li a {
-        width: 130%;
-        padding: .5rem 1rem;
-    }
+    
 
     .navbar-links.active {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         width: 100%;
-        background-color: 5793c7d1;
+        background-color: #5793c7d1;
+    }
+
+    .navbar-links li a:hover {
+        background-color: #5793c7d1;
     }
 
     .brand-logo {
