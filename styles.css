@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 body {
     margin: 0;
     padding: 0;
+    /* width: 100vw;
+    height: 100vh; */
 }
 
 .navbar {
@@ -12,20 +17,26 @@ body {
     justify-content: space-between;
     align-items: center;
     background: transparent;
-}
-
-.navbar:not(.is_stuck) {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
 }
+
+/* .navbar:not(.is_stuck) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+} */
 
 .brand-logo {
     width: 150px;
     height: 100px;
     padding-bottom: .5rem;
     margin-left: 3rem;
+    
 }
+
 
 .navbar-links ul {
     margin: 0;
@@ -40,7 +51,7 @@ body {
 
 .navbar-links li a {
     text-decoration: none;
-    color: black;
+    color: #3a3838;
     font-size: 1.2rem;
     padding: 1rem;
     display: block;
@@ -51,7 +62,7 @@ body {
 }
 
 .toggle-button {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
     display: none;
@@ -77,8 +88,45 @@ body {
     
 }
 
+h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #6d6262;
+}
+
+main .zone hr {
+    width: 5%;
+    border: 2px solid #e63d2e;
+    margin-bottom: 0.5rem;
+}
+
+main .zone h3 {
+    font-size: 1.5rem;
+    color: #e63d2e;
+}
+
+.button-contact {
+    margin-bottom: 22.5rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: #e63d2e;
+    border: 0.25rem solid  #e63d2e;
+    border-radius: 700px;
+}
+
+.button-contact:hover {
+    background-color: #e68225;
+    border: 0.25rem solid  #e68225;
+}
+
+
 .container {
     display: flex;
+    flex-direction: column;
     height: 76vh;
     justify-content: center;
     align-items: center;
@@ -90,9 +138,121 @@ body {
     background-color: #464646;
 }
 
+.despre {
+    display: flex;
+    height: 45vh;
+    text-align: center;
+}
+
+.text-transport {
+    margin-top: 5rem;
+}
+
+.text-transport p {
+    color: gray;
+    margin-left: 1em;
+    margin-bottom: 2rem;
+}
+
+.button-despre {
+    text-align: center;
+    text-decoration: none;
+    padding-left: 4em;
+    padding-right: 4em;
+    color: white;
+    background-color: #e63d2e;
+    border: 1em solid  #e63d2e;
+    border-radius: 700px;
+}
+
+.button-despre:hover {
+    background-color: #e68225;
+    border: 0.75em solid  #e68225;
+}
+
+aside {
+    width: 120vw;
+    background: url(./assets/images/tiruri.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 1rem;
+}
+
+main hr {
+    width: 60%;
+    border: 2px solid #e63d2e;
+}
+
+.card {
+    box-shadow: 0px 1px 5px #555;
+    background-color: white;
+    width: 22em;
+}
+.card__title {
+    font-size: 1.25rem;
+    padding: .5rem;
+    text-align: center;
+}
+.card__description {
+    padding: .5rem;
+    line-height: 1.6em;
+    text-align:center;
+}
+.button {
+    display: block;
+    background-color: tomato;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s ease-out;
+}
+
+
+
+.card_section {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.card-container {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+    justify-content: center;
+    grid-gap: 0.5rem;
+    margin-bottom: 4rem;
+    
+}
+
+footer p {
+    color: lightgray;
+    font-size: .8em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* padding-top: 1.3em; */
+    height: 5vh;
+    background-color: black;
+}
+
 @media (max-width: 800px) {
     .toggle-button {
         display: flex;
+    }
+
+    .toggle-button .bar {
+        background-color: black;
+    }
+    
+    main .zone h3 {
+        font-size: 1rem;
     }
 
     .navbar-links {
@@ -102,10 +262,19 @@ body {
         transform-origin: top center;
     }
 
+    main section h2 {
+        font-size: 0.5em;
+    }
+
+    .button-contact {
+        margin-top: 10em;
+        margin-bottom: 5em;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        background: transparent;
+        background: #5793c7d1;
     }
 
     .navbar-links ul {
@@ -115,24 +284,24 @@ body {
 
     .navbar-links li {
         text-align: center;
+        width: 100%;
     }
     
     .navbar-links li a {
+        width: 130%;
         padding: .5rem 1rem;
     }
 
     .navbar-links.active {
         display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: 5793c7d1;
     }
 
     .brand-logo {
         width: 75px;
         height: 50px;
-    }
-
-    h1 {
-        font-size: 2rem;
-        margin-right: 4rem;
     }
 
 
@@ -149,6 +318,23 @@ body {
         -o-background-size: cover;
         background-size: cover;
         background-color: #464646;
+    }
+
+    .card {
+        width: 20em;
+    }
+
+    .despre {
+        display: block;
+    }
+
+    .text-transport {
+        margin-top: auto;
+    }
+
+    aside {
+        display: none;
+
     }
 }
 
