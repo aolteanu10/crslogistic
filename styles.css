@@ -222,11 +222,12 @@ main hr {
 .card-container {
     display: grid;
     padding: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+    padding-left: 10rem;
+    padding-right: 10rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, .5fr));
     justify-content: center;
     grid-gap: 0.5rem;
     margin-bottom: 4rem;
-    
 }
 
 footer p {
