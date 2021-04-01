@@ -17,6 +17,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    background-color: #1d355709;
 }
 
 .crs-logistic {
@@ -266,6 +267,11 @@ main hr {
     transition: .3s ease-out;
 }
 
+.header-contact p {
+    font-size: .6em;
+    color: gray;
+}
+
 
 
 .card_section {
@@ -295,7 +301,7 @@ footer {
     display: flex;
     justify-content: center;
     /* padding-top: 1.3em; */
-    height: 5vh;
+    height: 2.5rem;
     background-color: black;
 }
 
@@ -309,10 +315,39 @@ footer {
 }
 
 
+
 .header-despre {
     text-align: center;
     font-size: 2em;
     color: #1d3557;
+}
+
+.contact {
+    min-height: 100vh;
+    background-color: #1d355709;
+    font-size: 1.4rem;
+}
+
+.card-contact {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
+    grid-gap: 1rem;
+}
+
+.card-contact article header h3 {
+    text-align: center;
+}
+
+.card_description {
+    padding-left: 1em;
+}
+
+.header-contact {
+    text-align: center;
+    font-size: 1.2em;
+    color: #1d3557;
+    padding-bottom: 1em;
 }
 
 footer a {
@@ -325,6 +360,11 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
+
+    .contact {
+        font-size: 1rem;
+    }
+
     .flex-container {
         flex-direction: column;
     }
@@ -473,6 +513,10 @@ footer a:hover {
 
     }
 
+    .header-contact h1 {
+        font-size: 1.2em;
+    }
+
 }
 
 @media (max-width: 412px) and (max-height: 700px) {
@@ -509,6 +553,126 @@ footer a:hover {
     .flex-container img {
         width: 528px;
         height: 240px;
+    }
+
+    main .zone h2 {
+        display: none;
+    }
+
+    main .zone hr {
+        display: none;
+    }
+
+    .contact {
+        font-size: 1rem;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1023px){
+
+    .toggle-button {
+        display: flex;
+        margin-top: 2em;
+    }
+
+    .toggle-button .bar {
+        background-color: black;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        animation: growDown 350ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background: transparent;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        width: 100%;
+    }
+    
+    
+
+    .navbar-links.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #5793c7d1;
+    }
+
+    .navbar-links li a {
+        color: white;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .navbar-links li a:hover {
+        background-color: #5793c7d1;
+    }
+
+
+    main .zone h2 {
+        display: none;
+    }
+    main .zone h3 {
+        display: none;
+    }
+    main .zone hr {
+        display: none;
+    }
+    main .zone .button-contact {
+        margin-bottom: 0;
+    }
+
+    .header-despre h1{
+        font-size: 1em;
+    }
+
+    .card_section {
+        margin-top: 18rem;
+    }
+
+    .despre aside {
+        display: none;
+    }
+    
+    .container-despre {
+        height: 30vh;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container img {
+        width: 400px;
+    }
+
+}
+
+@media (orientation: landscape) and (max-width: 568px){
+    .button-contact {
+        margin-top: 5em;
+    }
+
+    .toggle-button {
+        margin-top: 1em;
+    }
+
+    .brand-logo {
+        width: 100px;
+        height: 70px;
     }
 }
 
