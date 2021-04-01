@@ -177,7 +177,7 @@ main .zone h3 {
     height: 76vh;
     justify-content: center;
     align-items: center;
-    background: url(./assets/images/car-expres-logistic-crs-logistic-1.jpg) no-repeat center center fixed;
+    background: url(./assets/images/transport-auto-platforma-crs-logistic-1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -219,7 +219,7 @@ main .zone h3 {
 
 main .despre aside {
     width: 120vw;
-    background: url(./assets/images/tiruri.jpg) no-repeat center;
+    background: url(./assets/images/flota-camioane-crs-logistic.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -227,15 +227,7 @@ main .despre aside {
     margin: 1rem;
 }
 
-/* main section .flex-container aside {
-    background: url(./assets/images/crs-logistic-transport.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100vw;
-    height: 50vh;
-} */
+
 
 main hr {
     width: 60%;
@@ -307,7 +299,7 @@ footer {
 
 .container-despre {
     height: 15vh;
-    background: url(./assets/images/crs-logisitc-transport-2.jpg) no-repeat top center scroll ;
+    background: url(./assets/images/transport-auto-platforma-crs-logistic-2.jpg) no-repeat top center scroll ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -396,7 +388,7 @@ footer a:hover {
 
     .container-despre {
         height: 10vh;
-        background: url(./assets/images/crstransportpzoa.jpg) no-repeat center top scroll ;
+        background: url(./assets/images/transport-auto-platforma-crs-logistic-3.jpg) no-repeat center top scroll ;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -489,7 +481,7 @@ footer a:hover {
 
     .container {
         height: 60vh;
-        background: url(./assets/images/crstransportpzoa.jpg) no-repeat center center;
+        background: url(./assets/images/transport-auto-platforma-crs-logistic-3.jpg) no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
